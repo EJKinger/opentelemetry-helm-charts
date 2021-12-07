@@ -24,7 +24,8 @@ manager:
     requests:
       cpu: 100m
       memory: 64Mi
-  podAnnotations: {}
+  podAnnotations:
+    sidecar.opentelemetry.io/inject: "true"
 
 ## Provide OpenTelemetry Operator kube-rbac-proxy container image.
 ##
