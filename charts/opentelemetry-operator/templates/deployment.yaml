@@ -15,7 +15,7 @@ spec:
       labels:
         control-plane: controller-manager
       annotations:
-        {{- with .Values.standaloneCollector.podAnnotations }}
+        {{- with .Values.manager.podAnnotations }}
         {{- toYaml . | nindent 8 }}
         {{- end }}
     spec:
