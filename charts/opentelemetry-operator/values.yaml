@@ -24,6 +24,7 @@ manager:
     requests:
       cpu: 100m
       memory: 64Mi
+  podAnnotations: {}
 
 ## Provide OpenTelemetry Operator kube-rbac-proxy container image.
 ##
